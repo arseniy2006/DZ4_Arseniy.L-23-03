@@ -16,6 +16,7 @@ const TodoCard = ({ task, handleDone, handleDelete, handleSelectEdit, isEdit, ha
                 <button onClick={() => handleEdit({...task, title: newTitle })}>Save</button>
                 <button onClick={() => handleSelectEdit(null)}>Cancel</button>
             </div>
+
         );
     } else {
         return (
@@ -28,5 +29,6 @@ const TodoCard = ({ task, handleDone, handleDelete, handleSelectEdit, isEdit, ha
         );
     }
 };
+
 
 export default TodoCard;
